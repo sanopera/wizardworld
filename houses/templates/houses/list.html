@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge Minders</title>
+</head>
+<body>
+    {% extends "base.html" %}
+
+        {% block content %}
+            <h2>Casas de Hogwarts</h2>
+
+            <div class="houses-grid">
+                {% for house in houses %}
+                <div class="house-card" onclick="window.location.href='/houses/{{ house.id }}/'">
+                    <h3>{{ house.name }}</h3>
+                    <div class="house-founder">Fundador: {{ house.founder }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        {% endblock %}
+
+</body>
+</html>
