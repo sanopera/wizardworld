@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-nz)=*v&xl=las*kpjy4z8wpi+39suc93c6bnrqy)5q2rf_r2#t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'wizardworld-1.onrender.com',
+]
 
 
 # Application definition
