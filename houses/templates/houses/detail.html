@@ -65,7 +65,7 @@
 
 <div class="detail-box">
 
-    <!-- HEADER CON ESCUDO -->
+
     <div class="house-header">
 
         <img src="{% static 'img/houses/'|add:house.name|lower|add:'.png' %}"
@@ -80,31 +80,31 @@
         </div>
     </div>
 
-    <!-- DESCRIPCIÓN -->
+
     <p><strong>Descripción:</strong> {{ house.description|default:"Sin descripción disponible" }}</p>
 
-    <!-- GRID DE DETALLES -->
+
     <div class="detail-grid">
 
-        <!-- FUNDADOR -->
+
         <div class="detail-card">
             <div class="section-title">Fundador</div>
             <p>{{ house.founder|default:"Desconocido" }}</p>
         </div>
 
-        <!-- ANIMAL -->
+
         <div class="detail-card">
             <div class="section-title">Animal Emblemático</div>
             <p>{{ house.animal|default:"No disponible" }}</p>
         </div>
 
-        <!-- FANTASMA -->
+
         <div class="detail-card">
             <div class="section-title">Fantasma de la Casa</div>
             <p>{{ house.ghost|default:"No disponible" }}</p>
         </div>
 
-        <!-- LÍDERES -->
+
         <div class="detail-card">
             <div class="section-title">Director(es) de Casa</div>
             {% if house.heads %}
@@ -118,13 +118,13 @@
             {% endif %}
         </div>
 
-        <!-- COMMON ROOM -->
+
         <div class="detail-card">
             <div class="section-title">Sala Común</div>
             <p>{{ house.commonRoom|default:"Desconocida" }}</p>
         </div>
 
-        <!-- TRAITS -->
+        
         <div class="detail-card">
             <div class="section-title">Características</div>
             <div class="traits-list">
