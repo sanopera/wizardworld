@@ -135,6 +135,8 @@
     <script src="https://cdn.amplitude.com/libs/plugin-session-replay-browser-1.23.2-min.js.gz"></script>
     <script>
         window.amplitude.add(window.sessionReplay.plugin({ sampleRate: 1 }));
+        window.amplitude.add(window.autocapture.plugin());
+        
         window.amplitude.init("6e20be14d394da5449ad7f008f427b2e", {
             autocapture: { elementInteractions: true }
         });
