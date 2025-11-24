@@ -146,10 +146,13 @@
 
 
 <script>
-window.amplitude.track("view_house_detail", {
-    house_id: "{{ house.id }}",
-    house_name: "{{ house.name }}"
-});
+    console.log("House ID:", "{{ house.id }}");
+    console.log("House Name:", "{{ house.name }}");
+
+    window.amplitude.track("view_house_detail", {
+        house_id: "{{ house.id }}",
+        house_name: "{{ house.name }}"
+    });
 </script>
 
 {% endblock %}
